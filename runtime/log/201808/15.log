@@ -1,0 +1,3747 @@
+---------------------------------------------------------------
+[ 2018-08-15T11:41:58+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/list
+[运行时间：0.136410s] [吞吐率：7.33req/s] [内存消耗：2,580.30kb] [文件加载：78]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/list',
+  'route' => 'admin/auth/auth_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html [ array (
+  0 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001083s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.auth_name p_name from sh_auth t1 left join sh_auth t2 on t1.pid=t2.auth_id [ RunTime:0.082650s ]
+[ error ] [4]语法错误: unexpected 'auth_id' (T_STRING)[D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\runtime\temp\749ee03fb64e9f682099bec76853f45b.php:59]
+---------------------------------------------------------------
+[ 2018-08-15T11:42:19+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/list
+[运行时间：0.034230s] [吞吐率：29.21req/s] [内存消耗：2,571.52kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/list',
+  'route' => 'admin/auth/auth_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html [ array (
+  0 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.auth_name p_name from sh_auth t1 left join sh_auth t2 on t1.pid=t2.auth_id [ RunTime:0.000288s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:42:54+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/list
+[运行时间：0.038288s] [吞吐率：26.12req/s] [内存消耗：2,571.52kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/list',
+  'route' => 'admin/auth/auth_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html [ array (
+  0 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.auth_name p_name from sh_auth t1 left join sh_auth t2 on t1.pid=t2.auth_id [ RunTime:0.000615s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:43:10+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/list
+[运行时间：0.058194s] [吞吐率：17.18req/s] [内存消耗：2,571.62kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/list',
+  'route' => 'admin/auth/auth_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html [ array (
+  0 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010765s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.auth_name p_name from sh_auth t1 left join sh_auth t2 on t1.pid=t2.auth_id [ RunTime:0.000506s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:43:11+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/list
+[运行时间：0.057372s] [吞吐率：17.43req/s] [内存消耗：2,443.75kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/list',
+  'route' => 'admin/auth/auth_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html [ array (
+  0 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009740s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.auth_name p_name from sh_auth t1 left join sh_auth t2 on t1.pid=t2.auth_id [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:43:11+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/list
+[运行时间：0.038912s] [吞吐率：25.70req/s] [内存消耗：2,443.75kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/list',
+  'route' => 'admin/auth/auth_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html [ array (
+  0 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011180s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.auth_name p_name from sh_auth t1 left join sh_auth t2 on t1.pid=t2.auth_id [ RunTime:0.000489s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:43:19+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/list
+[运行时间：0.068300s] [吞吐率：14.64req/s] [内存消耗：2,571.45kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/list',
+  'route' => 'admin/auth/auth_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html [ array (
+  0 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010859s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.auth_name p_name from sh_auth t1 left join sh_auth t2 on t1.pid=t2.auth_id [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:43:21+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.021297s] [吞吐率：46.96req/s] [内存消耗：1,332.13kb] [文件加载：59]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+---------------------------------------------------------------
+[ 2018-08-15T11:55:25+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.069861s] [吞吐率：14.31req/s] [内存消耗：2,581.75kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003248s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000254s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:59:21+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.057829s] [吞吐率：17.29req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011196s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003686s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000228s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:59:22+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.083357s] [吞吐率：12.00req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010097s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.028215s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:59:22+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.047054s] [吞吐率：21.25req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011333s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003324s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000264s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:59:22+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.041264s] [吞吐率：24.23req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010063s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004420s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2018-08-15T11:59:23+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.042577s] [吞吐率：23.49req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T11:59:33+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.019043s] [吞吐率：52.51req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:00:02+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.058812s] [吞吐率：17.00req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011413s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004056s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000278s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:00:02+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.062357s] [吞吐率：16.04req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009885s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004332s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:00:02+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.037129s] [吞吐率：26.93req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.002997s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000170s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:00:02+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.035069s] [吞吐率：28.52req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.002872s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:00:04+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.023568s] [吞吐率：42.43req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:00:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.059252s] [吞吐率：16.88req/s] [内存消耗：2,460.02kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.028199s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:00:09+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.032124s] [吞吐率：31.13req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:02:24+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.039110s] [吞吐率：25.57req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000619s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.005164s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000246s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:02:25+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.027601s] [吞吐率：36.23req/s] [内存消耗：949.90kb] [文件加载：49]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:04:22+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.036474s] [吞吐率：27.42req/s] [内存消耗：2,585.63kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000668s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003951s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:04:22+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.070504s] [吞吐率：14.18req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010124s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004971s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000372s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:04:22+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.035875s] [吞吐率：27.87req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004209s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000212s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:04:23+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.031914s] [吞吐率：31.33req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000876s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003248s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000180s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:04:26+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/$auth['auth_id']
+[运行时间：0.021078s] [吞吐率：47.44req/s] [内存消耗：1,414.30kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:04:47+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.051543s] [吞吐率：19.40req/s] [内存消耗：2,585.54kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003118s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:04:49+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.019722s] [吞吐率：50.70req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:05:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.048501s] [吞吐率：20.62req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010687s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.005465s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.044619s] [吞吐率：22.41req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009644s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.002852s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000188s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.035255s] [吞吐率：28.36req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003140s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:06+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.030277s] [吞吐率：33.03req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000414s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.002845s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:06+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.037106s] [吞吐率：26.95req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004024s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000196s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:10+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.020194s] [吞吐率：49.52req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:05:30+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.044693s] [吞吐率：22.37req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003685s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000491s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:30+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.087676s] [吞吐率：11.41req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010782s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.037020s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000243s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:31+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.045399s] [吞吐率：22.03req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011234s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003230s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:31+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.021168s] [吞吐率：47.24req/s] [内存消耗：949.90kb] [文件加载：49]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:05:43+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.043815s] [吞吐率：22.82req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000678s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004455s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:43+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.041436s] [吞吐率：24.13req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010586s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.002988s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000274s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:05:44+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.013857s] [吞吐率：72.17req/s] [内存消耗：949.90kb] [文件加载：49]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:06:40+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.042892s] [吞吐率：23.31req/s] [内存消耗：2,585.62kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000722s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004392s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:06:40+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.046558s] [吞吐率：21.48req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001439s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003245s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000279s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:06:41+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.031992s] [吞吐率：31.26req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003475s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000166s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:06:41+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.033869s] [吞吐率：29.53req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000420s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003856s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000232s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:06:42+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/1
+[运行时间：0.014618s] [吞吐率：68.41req/s] [内存消耗：949.90kb] [文件加载：49]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:07:00+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.046304s] [吞吐率：21.60req/s] [内存消耗：2,585.66kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000929s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003822s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:07:00+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.060380s] [吞吐率：16.56req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011238s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003679s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:07:01+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.035160s] [吞吐率：28.44req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000725s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004354s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000254s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:07:01+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.025932s] [吞吐率：38.56req/s] [内存消耗：949.90kb] [文件加载：49]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:07:05+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.015763s] [吞吐率：63.44req/s] [内存消耗：949.90kb] [文件加载：49]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:07:19+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.040405s] [吞吐率：24.75req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000483s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004625s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000273s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:07:19+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.034177s] [吞吐率：29.26req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000586s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004065s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:07:19+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.035032s] [吞吐率：28.55req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.002986s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000684s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:07:19+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.030935s] [吞吐率：32.33req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003204s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000164s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:07:20+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.019970s] [吞吐率：50.08req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:07:36+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.064043s] [吞吐率：15.61req/s] [内存消耗：2,585.54kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010268s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004867s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:07:37+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.025445s] [吞吐率：39.30req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:09:13+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.063300s] [吞吐率：15.80req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010946s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004369s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000275s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:09:13+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.032046s] [吞吐率：31.21req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.002802s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000160s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:09:13+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.031248s] [吞吐率：32.00req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.002992s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000160s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:09:15+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.030660s] [吞吐率：32.62req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:09:24+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.069112s] [吞吐率：14.47req/s] [内存消耗：2,460.02kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010072s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.027854s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000227s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:09:48+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.017314s] [吞吐率：57.76req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:09:54+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.038105s] [吞吐率：26.24req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:10:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.050423s] [吞吐率：19.83req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003122s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000218s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:10:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.051102s] [吞吐率：19.57req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009465s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004376s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000234s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:10:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.042436s] [吞吐率：23.56req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.015010s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:10:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.034101s] [吞吐率：29.32req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000464s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003901s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000163s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:10:06+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.034570s] [吞吐率：28.93req/s] [内存消耗：2,460.31kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000762s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003500s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000154s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:10:06+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.030511s] [吞吐率：32.78req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000551s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004019s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000273s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:10:07+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.023507s] [吞吐率：42.54req/s] [内存消耗：1,414.20kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:10:49+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.045211s] [吞吐率：22.12req/s] [内存消耗：2,585.66kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003824s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:10:51+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/
+[运行时间：0.024120s] [吞吐率：41.46req/s] [内存消耗：1,414.15kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:10:56+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/
+[运行时间：0.018109s] [吞吐率：55.22req/s] [内存消耗：1,414.15kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:11:11+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.044327s] [吞吐率：22.56req/s] [内存消耗：2,585.66kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000487s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003261s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000204s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:11:12+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.044242s] [吞吐率：22.60req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010497s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003371s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000199s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:11:12+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.053541s] [吞吐率：18.68req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010708s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003630s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000227s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:11:13+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd
+[运行时间：0.012314s] [吞吐率：81.21req/s] [内存消耗：949.95kb] [文件加载：49]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:11:20+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.068027s] [吞吐率：14.70req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010110s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003322s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000246s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:11:20+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.042327s] [吞吐率：23.63req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003734s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:11:20+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.032492s] [吞吐率：30.78req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003646s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:11:21+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd
+[运行时间：0.014122s] [吞吐率：70.81req/s] [内存消耗：949.95kb] [文件加载：49]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:11:36+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.065430s] [吞吐率：15.28req/s] [内存消耗：2,585.66kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011269s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004667s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:11:37+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/auth_upd
+[运行时间：0.017227s] [吞吐率：58.05req/s] [内存消耗：949.90kb] [文件加载：49]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:11:49+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.054937s] [吞吐率：18.20req/s] [内存消耗：2,460.29kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000461s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.018459s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000170s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:11:50+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/auth_upd
+[运行时间：0.013119s] [吞吐率：76.23req/s] [内存消耗：999.39kb] [文件加载：50]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-08-15T12:13:15+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.065601s] [吞吐率：15.24req/s] [内存消耗：2,585.54kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001236s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.021851s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000194s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:13:15+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.040571s] [吞吐率：24.65req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000472s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.009875s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:13:16+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.036512s] [吞吐率：27.39req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003161s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000205s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:13:16+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.033470s] [吞吐率：29.88req/s] [内存消耗：2,460.28kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003453s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:13:23+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.052704s] [吞吐率：18.97req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000589s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.018191s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000428s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:13:24+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.038123s] [吞吐率：26.23req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.009082s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000194s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:13:24+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.035791s] [吞吐率：27.94req/s] [内存消耗：1,362.54kb] [文件加载：60]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+  'id' => '2',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:14:00+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.060077s] [吞吐率：16.65req/s] [内存消耗：2,585.83kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011495s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003681s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000199s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:14:00+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.035069s] [吞吐率：28.52req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003139s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000207s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:14:00+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.041481s] [吞吐率：24.11req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003150s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000194s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:14:01+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.017263s] [吞吐率：57.93req/s] [内存消耗：1,362.54kb] [文件加载：60]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+  'id' => '2',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:15:00+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.048924s] [吞吐率：20.44req/s] [内存消耗：2,585.83kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000558s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004193s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000230s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:15:00+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.046873s] [吞吐率：21.33req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003163s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000201s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:15:00+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.204596s] [吞吐率：4.89req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.167767s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000698s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:15:01+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.018203s] [吞吐率：54.94req/s] [内存消耗：1,362.54kb] [文件加载：60]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+  'id' => '2',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:15:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.054087s] [吞吐率：18.49req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011262s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003661s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000217s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:15:05+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.069617s] [吞吐率：14.36req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010820s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003541s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000155s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:15:06+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.353825s] [吞吐率：2.83req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000513s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.320876s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:15:06+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.017615s] [吞吐率：56.77req/s] [内存消耗：1,362.54kb] [文件加载：60]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+  'id' => '2',
+)
+---------------------------------------------------------------
+[ 2018-08-15T12:15:26+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.066327s] [吞吐率：15.08req/s] [内存消耗：2,460.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html [ array (
+  0 => 'auth',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.024208s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` WHERE  `auth_id` = 2 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000269s ]
+---------------------------------------------------------------
+[ 2018-08-15T12:15:27+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/auth/upd/2
+[运行时间：0.026632s] [吞吐率：37.55req/s] [内存消耗：1,362.54kb] [文件加载：60]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/upd/<id>',
+  'route' => 'admin/auth/auth_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1:8000',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8000/admin/auth/upd/2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645',
+)
+[ info ] [ PARAM ] array (
+  'auth_id' => '2',
+  'auth_name' => '添加用户',
+  'pid' => '0',
+  'auth_c' => 'User',
+  'auth_a' => 'user_add',
+  'id' => '2',
+)

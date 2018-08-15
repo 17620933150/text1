@@ -32,9 +32,9 @@ class AuthController extends Controller {
             //判断入库是否成功
             $authModel = model('Auth');
             if ($authModel->save($postData)){
-                $this->success('添加成功',url('auth/list'));
+                return ["msg"=>"添加成功！", "status"=>true];
             }else{
-                $this->error('添加失败');
+                return ["msg"=>"添加失败！", "status"=>true];
             }
         }
 
@@ -46,10 +46,37 @@ class AuthController extends Controller {
 
     //权限编辑
     public function auth_upd() {
-        echo 12;
+        //判断是否post请求
+        if (request()->isPost()) {
+            //接收post数据
+            $postData = input('post.');
+            //验证器验证,如果是顶级权限则是pid=0,验证onlyAuthName
+            if ($postData['pid']==0) {
+                $result = $this->validate($postData,"Auth.onlyAuthName",[],true);
+            }else{
+                $result = $this->validate($postData,"Auth.upd",[],true);
+            }
+            //如果验证失败
+            if ($result !== true) {
+                $this->error(implode(',',$result));
+            }
+            //判断入库是否成功
+            $authModel = model('Auth');
+            if ($authModel->save($postData)){
+                return ["msg"=>"编辑成功！", "status"=>true];
+            }else{
+                return ["msg"=>"编辑失败！", "status"=>true];
+            }
+        }
+
+
         //获取当前权限id的数据回显到页面上
-        $auth_id = input('auth_id');
-        var_dump($auth_id);
+        $auth_id = input('id');
+        $auth = Auth::find($auth_id);
+        //取出所有的无限极分类权限
+        $authModel = model("Auth");
+        $auths = $authModel->getSonsAuth($authModel->select());
+        return $this->fetch('admin_auth_upd',['auth'=>$auth,'auths'=>$auths]);
     }
 
 }

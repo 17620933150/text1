@@ -21,6 +21,7 @@ class Auth extends Validate {
         //场景名 => [元素=>规则1|规则2]
         //场景名 => [元素] 表示验证所有的规则
         'add' => ['auth_name','auth_c','auth_a'],
+        'upd' => ['auth_name','auth_c','auth_a'],
         'onlyAuthName' => ['auth_name']
     ];
 

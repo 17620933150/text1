@@ -19,15 +19,16 @@
 <script type="text/javascript" src="{:config('admin_static')}/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-<title>添加管理员 - 管理员管理 - H-ui.admin v3.1</title>
+<title>编辑管理员 - 管理员管理 - H-ui.admin v3.1</title>
 </head>
 <body>
 <article class="page-container">
 	<form class="form form-horizontal" id="form-admin-add">
+		<input type="hidden" name="auth_id" value="{$auth['auth_id']}">
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>权限名称：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" class="input-text" value="" placeholder="" id="auth_name" name="auth_name">
+			<input type="text" class="input-text" value="{$auth['auth_name']}" placeholder="" id="auth_name" name="auth_name">
 		</div>
 	</div>
 	<div class="row cl">
@@ -35,8 +36,8 @@
 		<div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
 			<select class="select" name="pid" size="1">
 				<option value="0">顶级权限</option>
-				{foreach name='auths' item='auth'}
-					<option value="{$auth['auth_id']}">{:str_repeat('&nbsp;',$auth['level']*3)}{$auth['auth_name']}</option>
+				{foreach name='auths' item='auth_v'}
+					<option value="{$auth_v['auth_id']}">{:str_repeat('&nbsp;',$auth_v['level']*3)}{$auth_v['auth_name']}</option>
 				{/foreach}
 			</select>
 			</span>
@@ -45,13 +46,13 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>控制器名称：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="auth_c" name="auth_c">
+				<input type="text" class="input-text" value="{$auth['auth_c']}" placeholder="" id="auth_c" name="auth_c">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>方法名：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="auth_a" name="auth_a">
+				<input type="text" class="input-text" value="{$auth['auth_a']}" placeholder="" id="auth_a" name="auth_a">
 			</div>
 		</div>
 	<div class="row cl">
@@ -120,13 +121,13 @@ $(function(){
 			$(form).ajaxSubmit({
 				type: 'post',
 				url: "" ,
-                success: function(date){
-                    if (date.status == "true") {
+				success: function(date){
+				    if (date.status == "true") {
                         layer.msg(date.msg,{icon:1,time:1000});
-                    }else{
+					}else{
                         layer.msg(date.msg,{icon:1,time:1000});
-                    }
-                },
+					}
+				},
                 error: function(XmlHttpRequest, textStatus, errorThrown){
 					layer.msg('error!',{icon:1,time:1000});
 				}

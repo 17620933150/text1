@@ -34,6 +34,6 @@ Route::group('admin',function() {
 
     Route::get('auth/list', 'admin/auth/auth_list');//后台权限列表
     Route::rule('auth/add', 'admin/auth/auth_add');//后台权限添加
-    Route::get('auth/upd', 'admin/auth/auth_upd');//后台权限编辑
+    Route::rule('auth/upd/:id', 'admin/auth/auth_upd');//后台权限编辑
 
 });

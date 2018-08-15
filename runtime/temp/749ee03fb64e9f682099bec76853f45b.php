@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html";i:1534145718;}*/ ?>
+<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html";i:1534304598;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -56,7 +56,7 @@
 				<td><?php echo htmlentities($auth['p_name']); ?></td>
 				<td><?php echo htmlentities($auth['auth_c']); ?></td>
 				<td><?php echo htmlentities($auth['auth_a']); ?></td>
-				<td><a title="编辑" href="<?php echo url('admin/auth/upd',['auth_id'=>$auth['auth_id']]); ?>" onclick="admin_permission_edit('角色编辑','admin-permission-add.html','1','','310')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_permission_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				<td><a title="编辑" href="<?php echo url('/admin/auth/upd/').$auth['auth_id']; ?>" onclick="admin_permission_edit('角色编辑','admin-permission-add.html','1','','310')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_permission_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 			</tr>
 		<?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>

@@ -1,3 +1,4 @@
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_upd.html";i:1534306483;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,27 +8,28 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="{:config('admin_static')}/lib/html5shiv.js"></script>
-<script type="text/javascript" src="{:config('admin_static')}/lib/respond.min.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/html5shiv.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/respond.min.js"></script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/lib/Hui-iconfont/1.0.8/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/static/h-ui.admin/css/style.css" />
 <!--[if IE 6]>
-<script type="text/javascript" src="{:config('admin_static')}/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-<title>添加管理员 - 管理员管理 - H-ui.admin v3.1</title>
+<title>编辑管理员 - 管理员管理 - H-ui.admin v3.1</title>
 </head>
 <body>
 <article class="page-container">
 	<form class="form form-horizontal" id="form-admin-add">
+		<input type="hidden" name="auth_id" value="<?php echo htmlentities($auth['auth_id']); ?>">
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>权限名称：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" class="input-text" value="" placeholder="" id="auth_name" name="auth_name">
+			<input type="text" class="input-text" value="<?php echo htmlentities($auth['auth_name']); ?>" placeholder="" id="auth_name" name="auth_name">
 		</div>
 	</div>
 	<div class="row cl">
@@ -35,9 +37,9 @@
 		<div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
 			<select class="select" name="pid" size="1">
 				<option value="0">顶级权限</option>
-				{foreach name='auths' item='auth'}
-					<option value="{$auth['auth_id']}">{:str_repeat('&nbsp;',$auth['level']*3)}{$auth['auth_name']}</option>
-				{/foreach}
+				<?php if(is_array($auths) || $auths instanceof \think\Collection || $auths instanceof \think\Paginator): if( count($auths)==0 ) : echo "" ;else: foreach($auths as $key=>$auth_v): ?>
+					<option value="<?php echo htmlentities($auth_v['auth_id']); ?>"><?php echo str_repeat('&nbsp;',$auth_v['level']*3); ?><?php echo htmlentities($auth_v['auth_name']); ?></option>
+				<?php endforeach; endif; else: echo "" ;endif; ?>
 			</select>
 			</span>
 		</div>
@@ -45,13 +47,13 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>控制器名称：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="auth_c" name="auth_c">
+				<input type="text" class="input-text" value="<?php echo htmlentities($auth['auth_c']); ?>" placeholder="" id="auth_c" name="auth_c">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>方法名：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="auth_a" name="auth_a">
+				<input type="text" class="input-text" value="<?php echo htmlentities($auth['auth_a']); ?>" placeholder="" id="auth_a" name="auth_a">
 			</div>
 		</div>
 	<div class="row cl">
@@ -63,15 +65,15 @@
 </article>
 
 <!--_footer 作为公共模版分离出去--> 
-<script type="text/javascript" src="{:config('admin_static')}/lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="{:config('admin_static')}/lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="{:config('admin_static')}/static/h-ui/js/H-ui.min.js"></script> 
-<script type="text/javascript" src="{:config('admin_static')}/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="{:config('admin_static')}/lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
-<script type="text/javascript" src="{:config('admin_static')}/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
-<script type="text/javascript" src="{:config('admin_static')}/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery.validation/1.14.0/messages_zh.js"></script>
 <script>
 	//给name=pid的select元素绑定change事件
 </script>
@@ -120,13 +122,13 @@ $(function(){
 			$(form).ajaxSubmit({
 				type: 'post',
 				url: "" ,
-                success: function(date){
-                    if (date.status == "true") {
+				success: function(date){
+				    if (date.status == "true") {
                         layer.msg(date.msg,{icon:1,time:1000});
-                    }else{
+					}else{
                         layer.msg(date.msg,{icon:1,time:1000});
-                    }
-                },
+					}
+				},
                 error: function(XmlHttpRequest, textStatus, errorThrown){
 					layer.msg('error!',{icon:1,time:1000});
 				}
