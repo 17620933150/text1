@@ -1,4 +1,4 @@
-<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_add.html";i:1534145226;}*/ ?>
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_add.html";i:1534306571;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -121,13 +121,13 @@ $(function(){
 			$(form).ajaxSubmit({
 				type: 'post',
 				url: "" ,
-				success: function(date){
-				    if (date.msg == "{'1'}") {
+                success: function(date){
+                    if (date.status == "true") {
                         layer.msg(date.msg,{icon:1,time:1000});
-					}else{
+                    }else{
                         layer.msg(date.msg,{icon:1,time:1000});
-					}
-				},
+                    }
+                },
                 error: function(XmlHttpRequest, textStatus, errorThrown){
 					layer.msg('error!',{icon:1,time:1000});
 				}

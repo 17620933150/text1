@@ -1,4 +1,4 @@
-<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_add.html";i:1533977535;}*/ ?>
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_add.html";i:1534325078;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -36,13 +36,13 @@
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>初始密码：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="password" class="input-text" autocomplete="off" value="" placeholder="密码" id="password" name="password">
+			<input type="text" class="input-text" autocomplete="off" value="" placeholder="密码" id="password" name="password">
 		</div>
 	</div>
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>确认密码：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="password" class="input-text" autocomplete="off"  placeholder="确认新密码" id="repassword" name="repassword">
+			<input type="text" class="input-text" autocomplete="off"  placeholder="确认新密码" id="repassword" name="repassword">
 		</div>
 	</div>
 	<div class="row cl">
@@ -60,18 +60,18 @@
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3">角色：</label>
 		<div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
-			<select class="select" name="adminRole" size="1">
-				<option value="0">超级管理员</option>
-				<option value="1">总编</option>
-				<option value="2">栏目主辑</option>
-				<option value="3">栏目编辑</option>
+			<select class="select" name="role_id" size="1">
+				<option value="">请选择角色</option>
+				<?php if(is_array($roles) || $roles instanceof \think\Collection || $roles instanceof \think\Paginator): if( count($roles)==0 ) : echo "" ;else: foreach($roles as $key=>$role): ?>
+				<option value="<?php echo htmlentities($role['role_id']); ?>"><?php echo htmlentities($role['role_name']); ?></option>
+				<?php endforeach; endif; else: echo "" ;endif; ?>
 			</select>
 			</span> </div>
 	</div>
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3">备注：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<textarea name="" cols="" rows="" class="textarea"  placeholder="说点什么...100个字符以内" dragonfly="true" onKeyUp="$.Huitextarealength(this,100)"></textarea>
+			<textarea name="beihzu" cols="" rows="" class="textarea"  placeholder="说点什么...100个字符以内" dragonfly="true" onKeyUp="$.Huitextarealength(this,100)"></textarea>
 			<p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
 		</div>
 	</div>
@@ -102,48 +102,52 @@ $(function(){
 	});
 		//验证插件
 	$("#form-admin-add").validate({
-		// rules:{
-        //     username:{
-		// 		required:true,
-		// 		minlength:4,
-		// 		maxlength:16
-		// 	},
-		// 	password:{
-		// 		required:true,
-		// 	},
-        //     repassword:{
-		// 		required:true,
-		// 		equalTo: "#password"
-		// 	},
-		// 	sex:{
-		// 		required:true,
-		// 	},
-		// 	phone:{
-		// 		required:true,
-		// 		isPhone:true,
-		// 	},
-		// 	email:{
-		// 		required:true,
-		// 		email:true,
-		// 	},
-		// 	adminRole:{
-		// 		required:true,
-		// 	},
-		// },
+		rules:{
+            username:{
+				required:true
+			},
+			password:{
+				required:true,
+        		minlength:4,
+        		maxlength:16
+			},
+            repassword:{
+				required:true,
+				equalTo: "#password"
+			},
+            beihzu:{
+				required:true,
+			},
+			phone:{
+				required:true,
+				isPhone:true,
+			},
+			email:{
+				required:true,
+				email:true,
+			},
+			role_name:{
+				required:true,
+			},
+		},
 		onkeyup:false,
 		focusCleanup:true,
 		success:"valid",
 		submitHandler:function(form){
-			$(form).ajaxSubmit({
-				type: 'post',
-				url: "" ,
-				success: function(data){
-					layer.msg('添加成功!',{icon:1,time:1000});
-				},
+            $(form).ajaxSubmit({
+                type: 'post',
+                url: "" ,
+                success: function(date){
+                    if (date.status == "true") {
+                        layer.msg(date.msg,{icon:1,time:1000});
+                    }else{
+                        layer.msg(date.msg,{icon:1,time:1000});
+                    }
+                },
                 error: function(XmlHttpRequest, textStatus, errorThrown){
-					layer.msg('error!',{icon:1,time:1000});
-				}
-			});
+                    layer.msg('error!',{icon:1,time:1000});
+                }
+            });
 			var index = parent.layer.getFrameIndex(window.name);
 			parent.$('.btn-refresh').click();
 			parent.layer.close(index);

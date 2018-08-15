@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html";i:1533959873;}*/ ?>
+<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html";i:1534327349;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -59,45 +59,27 @@
         </tr>
         </thead>
         <tbody>
+        <?php if(is_array($users) || $users instanceof \think\Collection || $users instanceof \think\Paginator): if( count($users)==0 ) : echo "" ;else: foreach($users as $key=>$user): ?>
         <tr class="text-c">
-            <td><input type="checkbox" value="1" name=""></td>
-            <td>1</td>
-            <td>admin</td>
-            <td>13000000000</td>
-            <td>admin@mail.com</td>
-            <td>超级管理员</td>
-            <td>2014-6-11 11:11:42</td>
-            <td class="td-status"><span class="label label-success radius">已启用</span></td>
-            <td class="td-manage"><a style="text-decoration:none" onClick="admin_stop(this,'10001')" href="javascript:;"
-                                     title="停用"><i class="Hui-iconfont">&#xe631;</i></a> <a title="编辑"
-                                                                                            href="javascript:;"
-                                                                                            onclick="admin_edit('管理员编辑','admin-add.html','1','800','500')"
-                                                                                            class="ml-5"
-                                                                                            style="text-decoration:none"><i
-                    class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;"
-                                                             onclick="admin_del(this,'1')" class="ml-5"
-                                                             style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+            <td><input type="checkbox" value="<?php echo htmlentities($user['user_id']); ?>" name=""></td>
+            <td><?php echo htmlentities($user['user_id']); ?></td>
+            <td><?php echo htmlentities($user['username']); ?></td>
+            <td><?php echo htmlentities($user['phone']); ?></td>
+            <td><?php echo htmlentities($user['email']); ?></td>
+            <td><?php echo htmlentities($user['role_name']); ?></td>
+            <td><?php echo htmlentities($user['create_time']); ?></td>
+            <td class="td-status"><span class="label label-success radius"><?php echo $user['status']=='1' ? '已启用' : '已停用'; ?></span>
+            </td>
+            <td class="td-manage">
+                <a style="text-decoration:none" onClick="admin_stop(this,'10001')" href="javascript:;" title="停用"><i
+                        class="Hui-iconfont">&#xe631;</i></a>
+                <a title="编辑" href="javascript:;" onclick="admin_edit('管理员编辑','admin-add.html','1','800','500')"
+                   class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                <a title="删除" href="javascript:;" onclick="admin_del(this,'1')" class="ml-5"
+                   style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
             </td>
         </tr>
-        <tr class="text-c">
-            <td><input type="checkbox" value="2" name=""></td>
-            <td>2</td>
-            <td>zhangsan</td>
-            <td>13000000000</td>
-            <td>admin@mail.com</td>
-            <td>栏目编辑</td>
-            <td>2014-6-11 11:11:42</td>
-            <td class="td-status"><span class="label radius">已停用</span></td>
-            <td class="td-manage"><a style="text-decoration:none" onClick="admin_start(this,'10001')"
-                                     href="javascript:;" title="启用"><i class="Hui-iconfont">&#xe615;</i></a> <a
-                    title="编辑" href="javascript:;" onclick="admin_edit('管理员编辑','admin-add.html','2','800','500')"
-                    class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除"
-                                                                                                          href="javascript:;"
-                                                                                                          onclick="admin_del(this,'1')"
-                                                                                                          class="ml-5"
-                                                                                                          style="text-decoration:none"><i
-                    class="Hui-iconfont">&#xe6e2;</i></a></td>
-        </tr>
+        <?php endforeach; endif; else: echo "" ;endif; ?>
         </tbody>
     </table>
 </div>

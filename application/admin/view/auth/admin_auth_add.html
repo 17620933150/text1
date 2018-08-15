@@ -85,34 +85,17 @@ $(function(){
 	});
 		//验证插件
 	$("#form-admin-add").validate({
-		// rules:{
-        //     username:{
-		// 		required:true,
-		// 		minlength:4,
-		// 		maxlength:16
-		// 	},
-		// 	password:{
-		// 		required:true,
-		// 	},
-        //     repassword:{
-		// 		required:true,
-		// 		equalTo: "#password"
-		// 	},
-		// 	sex:{
-		// 		required:true,
-		// 	},
-		// 	phone:{
-		// 		required:true,
-		// 		isPhone:true,
-		// 	},
-		// 	email:{
-		// 		required:true,
-		// 		email:true,
-		// 	},
-		// 	adminRole:{
-		// 		required:true,
-		// 	},
-		// },
+        rules:{
+            auth_name:{
+                required:true
+            },
+            auth_c:{
+                required:true,
+            },
+            auth_a:{
+                required:true,
+            },
+        },
 		onkeyup:false,
 		focusCleanup:true,
 		success:"valid",

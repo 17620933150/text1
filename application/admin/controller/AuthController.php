@@ -62,7 +62,7 @@ class AuthController extends Controller {
             }
             //判断入库是否成功
             $authModel = model('Auth');
-            if ($authModel->save($postData)){
+            if ($authModel->update($postData)){
                 return ["msg"=>"编辑成功！", "status"=>true];
             }else{
                 return ["msg"=>"编辑失败！", "status"=>true];

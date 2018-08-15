@@ -36,4 +36,8 @@ Route::group('admin',function() {
     Route::rule('auth/add', 'admin/auth/auth_add');//后台权限添加
     Route::rule('auth/upd/:id', 'admin/auth/auth_upd');//后台权限编辑
 
+    Route::get('role/list', 'admin/role/role_list');//后台权限列表
+    Route::rule('role/add', 'admin/role/role_add');//后台权限添加
+    Route::rule('role/upd/:id', 'admin/role/role_upd');//后台权限编辑
+
 });

@@ -78,6 +78,18 @@
 </script>
 
 <script type="text/javascript">
+	//权限父权限默认选中
+	$("select[name='pid']").val("$auth['pid']");
+	$("select[name='pid']").on('change',function () {
+		var pid = $(this).val();
+		//如果是顶级权限(auth_id=0)
+		if (pid=0) {
+		    $("input[name='auth_c'],input[name='auth_a']").prop('disabled',true).val('');
+		}else {
+            $("input[name='auth_c'],input[name='auth_a']").prop('disabled',false);
+		}
+    })
+
 $(function(){
 	$('.skin-minimal input').iCheck({
 		checkboxClass: 'icheckbox-blue',
@@ -86,34 +98,17 @@ $(function(){
 	});
 		//验证插件
 	$("#form-admin-add").validate({
-		// rules:{
-        //     username:{
-		// 		required:true,
-		// 		minlength:4,
-		// 		maxlength:16
-		// 	},
-		// 	password:{
-		// 		required:true,
-		// 	},
-        //     repassword:{
-		// 		required:true,
-		// 		equalTo: "#password"
-		// 	},
-		// 	sex:{
-		// 		required:true,
-		// 	},
-		// 	phone:{
-		// 		required:true,
-		// 		isPhone:true,
-		// 	},
-		// 	email:{
-		// 		required:true,
-		// 		email:true,
-		// 	},
-		// 	adminRole:{
-		// 		required:true,
-		// 	},
-		// },
+		rules:{
+            auth_name:{
+				required:true
+			},
+            auth_c:{
+				required:true,
+			},
+            auth_a:{
+				required:true,
+			},
+		},
 		onkeyup:false,
 		focusCleanup:true,
 		success:"valid",

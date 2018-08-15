@@ -15,7 +15,7 @@
 
 return [
     //密码加严
-    'password_salt'          => '$%^%#^&adf',
+    'password_salt'          => 'aaabbbcccddd111222333444',
     //后台view样式
     'admin_static'           => '/static/admin',
     // 应用名称
