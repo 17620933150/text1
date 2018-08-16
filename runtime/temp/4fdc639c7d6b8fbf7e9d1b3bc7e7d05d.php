@@ -1,3 +1,4 @@
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_upd.html";i:1534412924;}*/ ?>
 ﻿<!--_meta 作为公共模版分离出去-->
 <!DOCTYPE HTML>
 <html>
@@ -10,16 +11,16 @@
 <link rel="Bookmark" href="/favicon.ico" >
 <link rel="Shortcut Icon" href="/favicon.ico" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="{:config('admin_static')}/lib/html5shiv.js"></script>
-<script type="text/javascript" src="{:config('admin_static')}/lib/respond.min.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/html5shiv.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/respond.min.js"></script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/lib/Hui-iconfont/1.0.8/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="{:config('admin_static')}/static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="<?php echo config('admin_static'); ?>/static/h-ui.admin/css/style.css" />
 <!--[if IE 6]>
-<script type="text/javascript" src="{:config('admin_static')}/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
 <!--/meta 作为公共模版分离出去-->
@@ -31,16 +32,17 @@
 <body>
 <article class="page-container">
 	<form action="" method="post" class="form form-horizontal" id="form-admin-role-add">
+		<input type="hidden" name="role_id" value="<?php echo htmlentities($role['role_id']); ?>">
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>角色名称：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="role_name" name="role_name">
+				<input type="text" class="input-text" value="<?php echo htmlentities($role['role_name']); ?>" placeholder="" id="role_name" name="role_name">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">备注：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="role_rema" name="role_rema">
+				<input type="text" class="input-text" value="<?php echo htmlentities($role['role_rema']); ?>" placeholder="" id="role_rema" name="role_rema">
 			</div>
 		</div>
 		<div class="row cl">
@@ -50,26 +52,25 @@
 				<dl class="permission-list">
 					<dt>
 						<label>
-							<input type="checkbox" value="{$auths[$one_auth_id]['auth_id']}" name="auth_ids_list[]">
-							{$auths[$one_auth_id]['auth_name']}</label>
+							<input type="checkbox" value="<?php echo htmlentities($auths[$one_auth_id]['auth_id']); ?>" name="auth_ids_list[]">
+							<?php echo htmlentities($auths[$one_auth_id]['auth_name']); ?></label>
 					</dt>
 					<dd>
 						<dl class="cl permission-list2">
 							<?php foreach($children[$one_auth_id] as $two_auth_id): ?>
 							<dt>
 								<label class="">
-									<input type="checkbox" value="{$auths[$two_auth_id]['auth_id']}" name="auth_ids_list[]">
-									{$auths[$two_auth_id]['auth_name']}</label>
+									<input type="checkbox" value="<?php echo htmlentities($auths[$two_auth_id]['auth_id']); ?>" name="auth_ids_list[]">
+									<?php echo htmlentities($auths[$two_auth_id]['auth_name']); ?></label>
 							</dt>
 								<?php foreach(isset($children[$two_auth_id])?$children[$two_auth_id]:[] as $three_auth_id): ?>
 								<dd>
 									<label class="">
-										<input type="checkbox" value="{$auths[$three_auth_id]['auth_id']}" name="auth_ids_list[]">
-										{$auths[$three_auth_id]['auth_name']}</label>
+										<input type="checkbox" value="<?php echo htmlentities($auths[$three_auth_id]['auth_id']); ?>" name="auth_ids_list[]">
+										<?php echo htmlentities($auths[$three_auth_id]['auth_name']); ?></label>
 									<label class="c-orange"><input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-5"> 只能操作自己发布的</label>
 								</dd>
-								<?php endforeach; ?>
-							<?php endforeach; ?>
+								<?php endforeach; endforeach; ?>
 						</dl>
 					</dd>
 				</dl>
@@ -85,16 +86,23 @@
 </article>
 
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="{:config('admin_static')}/lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="{:config('admin_static')}/lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="{:config('admin_static')}/static/h-ui/js/H-ui.min.js"></script> 
-<script type="text/javascript" src="{:config('admin_static')}/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="{:config('admin_static')}/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
-<script type="text/javascript" src="{:config('admin_static')}/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="{:config('admin_static')}/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery.validation/1.14.0/messages_zh.js"></script>
 <script type="text/javascript">
+
+	//让当前角色已有的权限默认选中
+	var auth_ids_list = "<?php echo htmlentities($role['auth_ids_list']); ?>";
+	//split把字符串变成数组
+	var arr_ids_list = auth_ids_list.split(',');
+	$("input[type='checkbox']").val(arr_ids_list);
+
 $(function(){
 	$(".permission-list dt input:checkbox").click(function(){
 		$(this).closest("dl").find("dd input:checkbox").prop("checked",$(this).prop("checked"));

@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html";i:1534327349;}*/ ?>
+<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html";i:1534409783;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -73,9 +73,9 @@
             <td class="td-manage">
                 <a style="text-decoration:none" onClick="admin_stop(this,'10001')" href="javascript:;" title="停用"><i
                         class="Hui-iconfont">&#xe631;</i></a>
-                <a title="编辑" href="javascript:;" onclick="admin_edit('管理员编辑','admin-add.html','1','800','500')"
+                <a title="编辑" href="javascript:;" onclick="admin_edit('管理员编辑','<?php echo url('/admin/user/upd/').$user['user_id']; ?>','1','1200','800')"
                    class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
-                <a title="删除" href="javascript:;" onclick="admin_del(this,'1')" class="ml-5"
+                <a title="删除" href="javascript:;" onclick="admin_del(this,'<?php echo htmlentities($user['user_id']); ?>')" class="ml-5"
                    style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
             </td>
         </tr>
@@ -105,6 +105,9 @@
     */
     /*管理员-增加*/
     function admin_add(title, url, w, h) {
+        url = "<?php echo url('/admin/user/add/'); ?>";
+        w = '1000';
+        h = '800';
         layer_show(title, url, w, h);
     }
 
@@ -113,13 +116,28 @@
         layer.confirm('确认要删除吗？', function (index) {
             $.ajax({
                 type: 'POST',
-                url: '',
+                url: "<?php echo url('/admin/auth/del/'); ?>"+id,
                 dataType: 'json',
-                success: function (data) {
-                    $(obj).parents("tr").remove();
-                    layer.msg('已删除!', {icon: 1, time: 1000});
+                data: {
+                    "_method": "delete",
+                    "_token": "{{ csrf_token() }}",
                 },
-                error: function (data) {
+                success:function(data){
+                    if (data.status) {
+                        $(obj).parents("tr").remove();
+                        layer.msg(data.msg,{icon:1,time:1000},function () {
+                            //刷新当前layer窗口的父级窗口
+                            parent.window.location.reload();
+                        });
+                    }else{
+                        layer.msg(data.msg,{icon:1,time:1000},function () {
+                            //刷新当前layer窗口的父级窗口
+                            parent.window.location.reload();
+                        });
+                    }
+
+                },
+                error:function(data) {
                     console.log(data.msg);
                 },
             });
@@ -147,8 +165,6 @@
     function admin_start(obj, id) {
         layer.confirm('确认要启用吗？', function (index) {
             //此处请求后台程序，下方是成功后的前台处理……
-
-
             $(obj).parents("tr").find(".td-manage").prepend('<a onClick="admin_stop(this,id)" href="javascript:;" title="停用" style="text-decoration:none"><i class="Hui-iconfont">&#xe631;</i></a>');
             $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
             $(obj).remove();

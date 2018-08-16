@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html";i:1534320568;}*/ ?>
+<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html";i:1534412138;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -35,44 +35,20 @@
 				<th width="25"><input type="checkbox" value="" name=""></th>
 				<th width="40">ID</th>
 				<th width="200">角色名</th>
-				<th>用户列表</th>
 				<th width="300">描述</th>
 				<th width="70">操作</th>
 			</tr>
 		</thead>
 		<tbody>
+		<?php if(is_array($roles) || $roles instanceof \think\Collection || $roles instanceof \think\Paginator): if( count($roles)==0 ) : echo "" ;else: foreach($roles as $key=>$role): ?>
 			<tr class="text-c">
 				<td><input type="checkbox" value="" name=""></td>
-				<td>1</td>
-				<td>超级管理员</td>
-				<td><a href="#">admin</a></td>
-				<td>拥有至高无上的权利</td>
+				<td><?php echo htmlentities($role['role_name']); ?></td>
+				<td><?php echo htmlentities($role['all_username']); ?></td>
+				<td><?php echo htmlentities($role['role_rema']); ?></td>
 				<td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','admin-role-add.html','1')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 			</tr>
-			<tr class="text-c">
-				<td><input type="checkbox" value="" name=""></td>
-				<td>2</td>
-				<td>总编</td>
-				<td><a href="#">张三</a></td>
-				<td>具有添加、审核、发布、删除内容的权限</td>
-				<td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','admin-role-add.html','2')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
-			</tr>
-			<tr class="text-c">
-				<td><input type="checkbox" value="" name=""></td>
-				<td>3</td>
-				<td>栏目主辑</td>
-				<td><a href="#">李四</a>，<a href="#">王五</a></td>
-				<td>只对所在栏目具有添加、审核、发布、删除内容的权限</td>
-				<td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','admin-role-add.html','3')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
-			</tr>
-			<tr class="text-c">
-				<td><input type="checkbox" value="" name=""></td>
-				<td>4</td>
-				<td>栏目编辑</td>
-				<td><a href="#">赵六</a>，<a href="#">钱七</a></td>
-				<td>只对所在栏目具有添加、删除草稿等权利。</td>
-				<td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','admin-role-add.html','4')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
-			</tr>
+		<?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>
 	</table>
 </div>
@@ -100,14 +76,28 @@ function admin_role_del(obj,id){
 			type: 'POST',
 			url: '',
 			dataType: 'json',
-			success: function(data){
-				$(obj).parents("tr").remove();
-				layer.msg('已删除!',{icon:1,time:1000});
-			},
-			error:function(data) {
-				console.log(data.msg);
-			},
-		});		
+            data: {
+                "_method": "delete",
+                "_token": "{{ csrf_token() }}",
+            },
+            success:function(data){
+                if (data.status) {
+                    $(obj).parents("tr").remove();
+                    layer.msg(data.msg,{icon:1,time:1000},function () {
+                        //刷新当前layer窗口的父级窗口
+                        parent.window.location.reload();
+                    });
+                }else{
+                    layer.msg(data.msg,{icon:1,time:1000},function () {
+                        //刷新当前layer窗口的父级窗口
+                        parent.window.location.reload();
+                    });
+                }
+
+            },
+		});
+        //刷新当前layer窗口的父级窗口
+        parent.window.location.reload();
 	});
 }
 </script>

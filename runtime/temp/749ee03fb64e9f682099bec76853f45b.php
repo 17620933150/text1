@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html";i:1534304598;}*/ ?>
+<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html";i:1534409751;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -31,7 +31,8 @@
 			<button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜权限节点</button>
 		</form>
 	</div>
-	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a href="javascript:;" onclick="admin_permission_add('添加权限节点','admin-permission-add.html','','310')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加权限节点</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+		<a href="javascript:;" onclick="admin_permission_add('添加权限节点','<?php echo url('/admin/auth/add/'); ?>','1000','600')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加权限节点</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
 	<table class="table table-border table-bordered table-bg">
 		<thead>
 			<tr>
@@ -56,7 +57,9 @@
 				<td><?php echo htmlentities($auth['p_name']); ?></td>
 				<td><?php echo htmlentities($auth['auth_c']); ?></td>
 				<td><?php echo htmlentities($auth['auth_a']); ?></td>
-				<td><a title="编辑" href="<?php echo url('/admin/auth/upd/').$auth['auth_id']; ?>" onclick="admin_permission_edit('角色编辑','admin-permission-add.html','1','','310')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_permission_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				<td><a title="编辑" href="javascript:;" onclick="admin_permission_edit('角色编辑','<?php echo url('/admin/auth/upd/').$auth['auth_id']; ?>','','','310')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+					<a title="删除" href="javascript:;" onclick="admin_permission_del(this,'<?php echo htmlentities($auth['auth_id']); ?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+				</td>
 			</tr>
 		<?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>
@@ -93,16 +96,33 @@ function admin_permission_del(obj,id){
 	layer.confirm('确认要删除吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '',
+			url: "<?php echo url('/admin/auth/del/'); ?>"+id,
 			dataType: 'json',
-			success: function(data){
-				$(obj).parents("tr").remove();
-				layer.msg('已删除!',{icon:1,time:1000});
+            data: {
+                "_method": "delete",
+                "_token": "{{ csrf_token() }}",
+            },
+            success:function(data){
+			    console.log(data.status)
+			    if (data.status) {
+                    $(obj).parents("tr").remove();
+                    layer.msg(data.msg,{icon:1,time:1000},function () {
+                        //刷新当前layer窗口的父级窗口
+                        parent.window.location.reload();
+                    });
+				}else{
+                    layer.msg(data.msg,{icon:1,time:1000},function () {
+                        //刷新当前layer窗口的父级窗口
+                        parent.window.location.reload();
+                    });
+				}
+
 			},
 			error:function(data) {
 				console.log(data.msg);
 			},
-		});		
+		});
+
 	});
 }
 </script>

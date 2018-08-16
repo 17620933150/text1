@@ -1,4 +1,4 @@
-<?php /*a:1:{s:99:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\index.html";i:1533957945;}*/ ?>
+<?php /*a:1:{s:99:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\index.html";i:1534155195;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>

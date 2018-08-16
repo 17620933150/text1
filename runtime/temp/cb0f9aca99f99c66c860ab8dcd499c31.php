@@ -1,4 +1,4 @@
-<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_add.html";i:1534409827;}*/ ?>
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_upd.html";i:1534406998;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -30,7 +30,7 @@
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>管理员：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" class="input-text" value="" placeholder="" id="username" name="username">
+			<input type="text" class="input-text" value="<?php echo htmlentities($users[0]['username']); ?>" placeholder="" id="username" name="username">
 		</div>
 	</div>
 	<div class="row cl">
@@ -48,13 +48,13 @@
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" class="input-text" value="" placeholder="" id="phone" name="phone">
+			<input type="text" class="input-text" value="<?php echo htmlentities($users[0]['phone']); ?>" placeholder="" id="phone" name="phone">
 		</div>
 	</div>
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" class="input-text" placeholder="@" name="email" id="email">
+			<input type="text" class="input-text" placeholder="@" value="<?php echo htmlentities($users[0]['email']); ?>" name="email" id="email">
 		</div>
 	</div>
 	<div class="row cl">
@@ -68,19 +68,10 @@
 			</select>
 			</span> </div>
 	</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3">状态：</label>
-			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
-			<select class="select" name="role_id" size="1">
-				<option value="1">启用</option>
-				<option value="0">停用</option>
-			</select>
-			</span> </div>
-		</div>
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3">备注：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<textarea name="beihzu" cols="" rows="" class="textarea"  placeholder="说点什么...100个字符以内" dragonfly="true" onKeyUp="$.Huitextarealength(this,100)"></textarea>
+			<textarea name="beihzu" cols="" rows=""  class="textarea"  placeholder="说点什么...100个字符以内" dragonfly="true" onKeyUp="$.Huitextarealength(this,100)"><?php echo htmlentities($users[0]['beihzu']); ?></textarea>
 			<p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
 		</div>
 	</div>
@@ -103,6 +94,7 @@
 <script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
 <script type="text/javascript" src="<?php echo config('admin_static'); ?>/lib/jquery.validation/1.14.0/messages_zh.js"></script> 
 <script type="text/javascript">
+
 $(function(){
 	$('.skin-minimal input').iCheck({
 		checkboxClass: 'icheckbox-blue',
@@ -147,16 +139,10 @@ $(function(){
                 type: 'post',
                 url: "" ,
                 success: function(date){
-                    if (date.status) {
-                        layer.msg(date.msg,{icon:1,time:1000},function () {
-                            //刷新当前layer窗口的父级窗口
-                            parent.window.location.reload();
-                        });
+                    if (date.status == "true") {
+                        layer.msg(date.msg,{icon:1,time:1000});
                     }else{
-                        layer.msg(date.msg,{icon:1,time:1000},function () {
-                            //刷新当前layer窗口的父级窗口
-                            parent.window.location.reload();
-                        });
+                        layer.msg(date.msg,{icon:1,time:1000});
                     }
                 },
                 error: function(XmlHttpRequest, textStatus, errorThrown){
@@ -166,6 +152,8 @@ $(function(){
 			// var index = parent.layer.getFrameIndex(window.name);
 			// parent.$('.btn-refresh').click();
 			// parent.layer.close(index);
+            //刷新当前layer窗口的父级窗口
+            parent.window.location.reload();
 		}
 	});
 });

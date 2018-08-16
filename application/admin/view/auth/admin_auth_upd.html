@@ -118,7 +118,10 @@ $(function(){
 				url: "" ,
 				success: function(date){
 				    if (date.status == "true") {
-                        layer.msg(date.msg,{icon:1,time:1000});
+                        layer.msg(date.msg,{icon:1,time:1000},function () {
+                            //刷新当前layer窗口的父级窗口
+                            parent.window.location.reload();
+                        });
 					}else{
                         layer.msg(date.msg,{icon:1,time:1000});
 					}
@@ -127,9 +130,10 @@ $(function(){
 					layer.msg('error!',{icon:1,time:1000});
 				}
 			});
-			var index = parent.layer.getFrameIndex(window.name);
-			parent.$('.btn-refresh').click();
-			parent.layer.close(index);
+			// var index = parent.layer.getFrameIndex(window.name);
+			// parent.$('.btn-refresh').click();
+			// parent.layer.close(index);
+
 		}
 	});
 });

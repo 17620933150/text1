@@ -68,8 +68,6 @@ class AuthController extends Controller {
                 return ["msg"=>"编辑失败！", "status"=>true];
             }
         }
-
-
         //获取当前权限id的数据回显到页面上
         $auth_id = input('id');
         $auth = Auth::find($auth_id);
@@ -77,6 +75,16 @@ class AuthController extends Controller {
         $authModel = model("Auth");
         $auths = $authModel->getSonsAuth($authModel->select());
         return $this->fetch('admin_auth_upd',['auth'=>$auth,'auths'=>$auths]);
+    }
+    //后台用户的删除
+    public function auth_del() {
+        //接收数据
+        $user_id = input('id');
+        if (Auth::destroy($user_id)) {
+            return ["msg"=>"删除成功！", "status"=>true];
+        }else{
+            return ["msg"=>"删除失败！", "status"=>false];
+        }
     }
 
 }

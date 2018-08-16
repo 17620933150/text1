@@ -1,4 +1,4 @@
-<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_add.html";i:1534319957;}*/ ?>
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_add.html";i:1534409994;}*/ ?>
 ﻿<!--_meta 作为公共模版分离出去-->
 <!DOCTYPE HTML>
 <html>
@@ -130,18 +130,26 @@ $(function(){
                 type: 'post',
                 url: "" ,
                 success: function(date){
-                    if (date.status == "true") {
-                        layer.msg(date.msg,{icon:1,time:1000});
+                    if (date.status) {
+                        layer.msg(date.msg,{icon:1,time:1000},function () {
+                            //刷新当前layer窗口的父级窗口
+                            parent.window.location.reload();
+                        });
                     }else{
-                        layer.msg(date.msg,{icon:1,time:1000});
+                        layer.msg(date.msg,{icon:1,time:1000},function () {
+                            //刷新当前layer窗口的父级窗口
+                            parent.window.location.reload();
+                        });
                     }
                 },
                 error: function(XmlHttpRequest, textStatus, errorThrown){
                     layer.msg('error!',{icon:1,time:1000});
                 }
             });
-			var index = parent.layer.getFrameIndex(window.name);
-			parent.layer.close(index);
+			// var index = parent.layer.getFrameIndex(window.name);
+			// parent.layer.close(index);
+            //刷新当前layer窗口的父级窗口
+            parent.window.location.reload();
 		}
 	});
 });

@@ -1,4 +1,4 @@
-<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_add.html";i:1534306571;}*/ ?>
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_add.html";i:1534408137;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -86,34 +86,17 @@ $(function(){
 	});
 		//验证插件
 	$("#form-admin-add").validate({
-		// rules:{
-        //     username:{
-		// 		required:true,
-		// 		minlength:4,
-		// 		maxlength:16
-		// 	},
-		// 	password:{
-		// 		required:true,
-		// 	},
-        //     repassword:{
-		// 		required:true,
-		// 		equalTo: "#password"
-		// 	},
-		// 	sex:{
-		// 		required:true,
-		// 	},
-		// 	phone:{
-		// 		required:true,
-		// 		isPhone:true,
-		// 	},
-		// 	email:{
-		// 		required:true,
-		// 		email:true,
-		// 	},
-		// 	adminRole:{
-		// 		required:true,
-		// 	},
-		// },
+        rules:{
+            auth_name:{
+                required:true
+            },
+            auth_c:{
+                required:true,
+            },
+            auth_a:{
+                required:true,
+            },
+        },
 		onkeyup:false,
 		focusCleanup:true,
 		success:"valid",
@@ -123,7 +106,10 @@ $(function(){
 				url: "" ,
                 success: function(date){
                     if (date.status == "true") {
-                        layer.msg(date.msg,{icon:1,time:1000});
+                        layer.msg(date.msg,{icon:1,time:1000},function () {
+                            //刷新当前layer窗口的父级窗口
+                            parent.window.location.reload();
+                        });
                     }else{
                         layer.msg(date.msg,{icon:1,time:1000});
                     }
@@ -132,9 +118,10 @@ $(function(){
 					layer.msg('error!',{icon:1,time:1000});
 				}
 			});
-			var index = parent.layer.getFrameIndex(window.name);
-			parent.$('.btn-refresh').click();
-			parent.layer.close(index);
+			// var index = parent.layer.getFrameIndex(window.name);
+			// parent.$('.btn-refresh').click();
+			// parent.layer.close(index);
+
 		}
 	});
 });
