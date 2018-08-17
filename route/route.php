@@ -27,21 +27,30 @@ Route::get('think', function () {
 
 //后台admin首页分组路由
 Route::group('admin',function() {
-    //后台首页
-    Route::get('index', 'admin/index/index_list');
-    Route::get('user/list', 'admin/user/user_list');//后台用户列表
-    Route::rule('user/add', 'admin/user/user_add');//后台用户添加
-    Route::rule('user/upd/:id', 'admin/user/user_upd');//后台用户编辑
-    Route::rule('user/del/:id', 'admin/user/user_del');//后台用户删除
 
-    Route::get('auth/list', 'admin/auth/auth_list');//后台权限列表
-    Route::rule('auth/add', 'admin/auth/auth_add');//后台权限添加
-    Route::rule('auth/upd/:id', 'admin/auth/auth_upd');//后台权限编辑
-    Route::rule('auth/del/:id', 'admin/auth/auth_del');//后台权限删除
 
-    Route::get('role/list', 'admin/role/role_list');//后台权限列表
-    Route::rule('role/add', 'admin/role/role_add');//后台权限添加
-    Route::rule('role/upd/:id', 'admin/role/role_upd');//后台权限编辑
-    Route::rule('role/del/:id', 'admin/role/role_del');//后台权限删除
+
+    Route::rule('login', 'admin/public/login');         //后台登录路由
+    Route::rule('verify', 'admin/public/verify');         //后台登录验证码
+    Route::rule('logout', 'admin/public/logout');       //后台退出路由
+
+
+    Route::get('index', 'admin/index/index_list');           //后台首页
+    Route::get('welcome', 'admin/index/welcome');           //后台首页
+
+    Route::get('user/user_list', 'admin/user/user_list');    //后台用户列表
+    Route::rule('user/user_add', 'admin/user/user_add');     //后台用户添加
+    Route::rule('user/user_upd/:id', 'admin/user/user_upd'); //后台用户编辑
+    Route::rule('user/user_del/:id', 'admin/user/user_del'); //后台用户删除
+
+    Route::get('auth/auth_list', 'admin/auth/auth_list');    //后台权限列表
+    Route::rule('auth/auth_add', 'admin/auth/auth_add');     //后台权限添加
+    Route::rule('auth/auth_upd/:id', 'admin/auth/auth_upd'); //后台权限编辑
+    Route::rule('auth/auth_del/:id', 'admin/auth/auth_del'); //后台权限删除
+
+    Route::get('role/role_list', 'admin/role/role_list');    //后台权限列表
+    Route::rule('role/role_add', 'admin/role/role_add');     //后台权限添加
+    Route::rule('role/role_upd/:id', 'admin/role/role_upd'); //后台权限编辑
+    Route::rule('role/role_del/:id', 'admin/role/role_del'); //后台权限删除
 
 });

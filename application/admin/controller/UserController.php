@@ -1,11 +1,10 @@
 <?php
 namespace app\admin\controller;
-use think\Controller;
 use app\admin\model\Role;
 use app\admin\model\User;
 use think\Db;
 
-class UserController extends Controller {
+class UserController extends CommonController {
     //后台用户的展示
     public function  user_list() {
         //获取数据

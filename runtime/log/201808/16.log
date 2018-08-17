@@ -15489,3 +15489,493 @@
 [ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000397s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `sh_role` [ RunTime:0.003482s ]
 [ sql ] [ SQL ] SELECT * FROM `sh_role` LIMIT 1 [ RunTime:0.000230s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:01:07+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/user/list
+[运行时间：0.032721s] [吞吐率：30.56req/s] [内存消耗：2,149.96kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/user/list',
+  'route' => 'admin/user/user_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534387295',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html [ array (
+  0 => 'users',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000934s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.role_name from sh_user t1 left join sh_role t2 ON t1.role_id = t2.role_id [ RunTime:0.000694s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:01:10+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/user/add/
+[运行时间：0.055404s] [吞吐率：18.05req/s] [内存消耗：2,453.14kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/user/add',
+  'route' => 'admin/user/user_add',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/user/list',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534387295',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_add.html [ array (
+  0 => 'roles',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009859s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_role` [ RunTime:0.003737s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_role` [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:02:00+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/index
+[运行时间：0.026143s] [吞吐率：38.25req/s] [内存消耗：1,359.54kb] [文件加载：61]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/index',
+  'route' => 'admin/index/index_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534387295',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-16T18:03:08+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/user/list
+[运行时间：0.053964s] [吞吐率：18.53req/s] [内存消耗：2,149.96kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/user/list',
+  'route' => 'admin/user/user_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html [ array (
+  0 => 'users',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000608s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.role_name from sh_user t1 left join sh_role t2 ON t1.role_id = t2.role_id [ RunTime:0.000449s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:03:09+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/user/add/
+[运行时间：0.037840s] [吞吐率：26.43req/s] [内存消耗：2,453.14kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/user/add',
+  'route' => 'admin/user/user_add',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/user/list',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_add.html [ array (
+  0 => 'roles',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000467s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_role` [ RunTime:0.003509s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_role` [ RunTime:0.000268s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:03:18+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/list
+[运行时间：0.028423s] [吞吐率：35.18req/s] [内存消耗：2,265.77kb] [文件加载：70]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/list',
+  'route' => 'admin/role/role_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html [ array (
+  0 => 'roles',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,GROUP_CONCAT(t2.username) as all_username from sh_role t1  left join sh_user t2 ON  FIND_IN_SET(t2.role_id,t1.role_id) group by t1.role_id [ RunTime:0.000472s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:03:22+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/add/
+[运行时间：0.063477s] [吞吐率：15.75req/s] [内存消耗：2,462.40kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/add',
+  'route' => 'admin/role/role_add',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/role/list',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_add.html [ array (
+  0 => 'children',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011287s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003959s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000357s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:04:26+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/upd/1
+[运行时间：0.057080s] [吞吐率：17.52req/s] [内存消耗：2,501.26kb] [文件加载：76]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/upd/<id>',
+  'route' => 'admin/role/role_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/role/list',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_upd.html [ array (
+  0 => 'children',
+  1 => 'auths',
+  2 => 'role',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011176s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.004139s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_role` [ RunTime:0.003411s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_role` LIMIT 1 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:05:15+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/list
+[运行时间：0.044679s] [吞吐率：22.38req/s] [内存消耗：2,142.65kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/list',
+  'route' => 'admin/role/role_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html [ array (
+  0 => 'roles',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,GROUP_CONCAT(t2.username) as all_username from sh_role t1  left join sh_user t2 ON  FIND_IN_SET(t2.role_id,t1.role_id) group by t1.role_id [ RunTime:0.000556s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:05:15+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/list
+[运行时间：0.024073s] [吞吐率：41.54req/s] [内存消耗：2,142.65kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/list',
+  'route' => 'admin/role/role_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html [ array (
+  0 => 'roles',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,GROUP_CONCAT(t2.username) as all_username from sh_role t1  left join sh_user t2 ON  FIND_IN_SET(t2.role_id,t1.role_id) group by t1.role_id [ RunTime:0.000496s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:05:16+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/list
+[运行时间：0.037047s] [吞吐率：26.99req/s] [内存消耗：2,142.65kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/list',
+  'route' => 'admin/role/role_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html [ array (
+  0 => 'roles',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010931s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,GROUP_CONCAT(t2.username) as all_username from sh_role t1  left join sh_user t2 ON  FIND_IN_SET(t2.role_id,t1.role_id) group by t1.role_id [ RunTime:0.000541s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:06:26+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/add/
+[运行时间：0.051849s] [吞吐率：19.29req/s] [内存消耗：2,462.40kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/add',
+  'route' => 'admin/role/role_add',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/role/list',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_add.html [ array (
+  0 => 'children',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010673s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003885s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000291s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:06:30+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/add/
+[运行时间：0.046797s] [吞吐率：21.37req/s] [内存消耗：2,462.40kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/add',
+  'route' => 'admin/role/role_add',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/role/list',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_add.html [ array (
+  0 => 'children',
+  1 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011359s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003939s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:06:33+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/upd/1
+[运行时间：0.050261s] [吞吐率：19.90req/s] [内存消耗：2,501.26kb] [文件加载：76]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/upd/<id>',
+  'route' => 'admin/role/role_upd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/role/list',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1533957126,1534131022,1534213645,1534385721; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534413723',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_upd.html [ array (
+  0 => 'children',
+  1 => 'auths',
+  2 => 'role',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010619s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.003783s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_role` [ RunTime:0.003472s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_role` LIMIT 1 [ RunTime:0.000322s ]

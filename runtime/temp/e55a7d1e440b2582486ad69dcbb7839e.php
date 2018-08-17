@@ -1,4 +1,4 @@
-<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_add.html";i:1534409994;}*/ ?>
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_add.html";i:1534494868;}*/ ?>
 ﻿<!--_meta 作为公共模版分离出去-->
 <!DOCTYPE HTML>
 <html>
@@ -47,7 +47,7 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">分配权限：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<?php foreach($children[4] as $one_auth_id): ?>
+				<?php foreach($children[1] as $one_auth_id): ?>
 				<dl class="permission-list">
 					<dt>
 						<label>

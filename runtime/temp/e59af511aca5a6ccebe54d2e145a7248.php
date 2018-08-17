@@ -1,4 +1,4 @@
-<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_add.html";i:1534408137;}*/ ?>
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_add.html";i:1534409999;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -105,13 +105,16 @@ $(function(){
 				type: 'post',
 				url: "" ,
                 success: function(date){
-                    if (date.status == "true") {
+                    if (date.status) {
                         layer.msg(date.msg,{icon:1,time:1000},function () {
                             //刷新当前layer窗口的父级窗口
                             parent.window.location.reload();
                         });
                     }else{
-                        layer.msg(date.msg,{icon:1,time:1000});
+                        layer.msg(date.msg,{icon:1,time:1000},function () {
+                            //刷新当前layer窗口的父级窗口
+                            parent.window.location.reload();
+                        });
                     }
                 },
                 error: function(XmlHttpRequest, textStatus, errorThrown){

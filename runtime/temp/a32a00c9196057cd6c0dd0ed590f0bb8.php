@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html";i:1534409783;}*/ ?>
+<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html";i:1534492728;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -73,7 +73,7 @@
             <td class="td-manage">
                 <a style="text-decoration:none" onClick="admin_stop(this,'10001')" href="javascript:;" title="停用"><i
                         class="Hui-iconfont">&#xe631;</i></a>
-                <a title="编辑" href="javascript:;" onclick="admin_edit('管理员编辑','<?php echo url('/admin/user/upd/').$user['user_id']; ?>','1','1200','800')"
+                <a title="编辑" href="javascript:;" onclick="admin_edit('管理员编辑','<?php echo url('/admin/user/user_upd/').$user['user_id']; ?>','1','1200','800')"
                    class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
                 <a title="删除" href="javascript:;" onclick="admin_del(this,'<?php echo htmlentities($user['user_id']); ?>')" class="ml-5"
                    style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
@@ -105,7 +105,7 @@
     */
     /*管理员-增加*/
     function admin_add(title, url, w, h) {
-        url = "<?php echo url('/admin/user/add/'); ?>";
+        url = "<?php echo url('/admin/user/user_add/'); ?>";
         w = '1000';
         h = '800';
         layer_show(title, url, w, h);
@@ -116,7 +116,7 @@
         layer.confirm('确认要删除吗？', function (index) {
             $.ajax({
                 type: 'POST',
-                url: "<?php echo url('/admin/auth/del/'); ?>"+id,
+                url: "<?php echo url('/admin/user/user_del/'); ?>"+id,
                 dataType: 'json',
                 data: {
                     "_method": "delete",

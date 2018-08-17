@@ -1,4 +1,4 @@
-<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_upd.html";i:1534412924;}*/ ?>
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_upd.html";i:1534496589;}*/ ?>
 ﻿<!--_meta 作为公共模版分离出去-->
 <!DOCTYPE HTML>
 <html>
@@ -48,7 +48,7 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">分配权限：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<?php foreach($children[4] as $one_auth_id): ?>
+				<?php foreach($children[1] as $one_auth_id): ?>
 				<dl class="permission-list">
 					<dt>
 						<label>
@@ -99,9 +99,16 @@
 
 	//让当前角色已有的权限默认选中
 	var auth_ids_list = "<?php echo htmlentities($role['auth_ids_list']); ?>";
-	//split把字符串变成数组
-	var arr_ids_list = auth_ids_list.split(',');
-	$("input[type='checkbox']").val(arr_ids_list);
+		//当auth_ids_list等于*全部选择
+	if (auth_ids_list == '*') {
+        $("input[type='checkbox']").attr("checked",true); //读取所有name为'chk_list'对象的状态（是否选中）
+	}else{
+        //split把字符串变成数组
+        var arr_ids_list = auth_ids_list.split(',');
+        $("input[type='checkbox']").val(arr_ids_list);
+	}
+
+
 
 $(function(){
 	$(".permission-list dt input:checkbox").click(function(){

@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html";i:1534412138;}*/ ?>
+<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html";i:1534495250;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -25,7 +25,7 @@
 <body>
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 管理员管理 <span class="c-gray en">&gt;</span> 角色管理 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	<div class="cl pd-5 bg-1 bk-gray"> <span class="l"> <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" href="javascript:;" onclick="admin_role_add('添加角色','admin-role-add.html','800')"><i class="Hui-iconfont">&#xe600;</i> 添加角色</a> </span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+	<div class="cl pd-5 bg-1 bk-gray"> <span class="l"> <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" href="javascript:;" onclick="admin_role_add('添加角色','<?php echo url('/admin/role/role_add/'); ?>','800')"><i class="Hui-iconfont">&#xe600;</i> 添加角色</a> </span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
 	<table class="table table-border table-bordered table-hover table-bg">
 		<thead>
 			<tr>
@@ -33,8 +33,8 @@
 			</tr>
 			<tr class="text-c">
 				<th width="25"><input type="checkbox" value="" name=""></th>
-				<th width="40">ID</th>
-				<th width="200">角色名</th>
+				<th width="40">角色名</th>
+				<th width="200">那些用户拥有此权限</th>
 				<th width="300">描述</th>
 				<th width="70">操作</th>
 			</tr>
@@ -46,7 +46,7 @@
 				<td><?php echo htmlentities($role['role_name']); ?></td>
 				<td><?php echo htmlentities($role['all_username']); ?></td>
 				<td><?php echo htmlentities($role['role_rema']); ?></td>
-				<td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','admin-role-add.html','1')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				<td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','<?php echo url('/admin/role/role_upd/').$role['role_id']; ?>','1')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'$role[\'role_id\']}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 			</tr>
 		<?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>
@@ -74,7 +74,7 @@ function admin_role_del(obj,id){
 	layer.confirm('角色删除须谨慎，确认要删除吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '',
+			url: "<?php echo url('/admin/role/role_del/'); ?>" + id,
 			dataType: 'json',
             data: {
                 "_method": "delete",

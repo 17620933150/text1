@@ -1,11 +1,10 @@
 <?php
 namespace app\admin\controller;
 use app\admin\model\Auth;
-use think\Controller;
 use app\admin\model\Role;
 use think\Db;
 
-class RoleController extends Controller {
+class RoleController extends CommonController {
     //角色列表
     public function role_list() {
         $sql = 'select t1.*,GROUP_CONCAT(t2.username) as all_username from sh_role t1  left join sh_user t2 ON  FIND_IN_SET(t2.role_id,t1.role_id) group by t1.role_id';
@@ -65,7 +64,7 @@ class RoleController extends Controller {
             $children[$vv['pid']][] = $vv['auth_id'];
         }
         // 取出当前角色已有的权限
-        $role = Role::find();
+        $role = Role::find($role_id);
         return $this->fetch('admin_role_upd',['children'=>$children,'auths'=>$auths,'role'=>$role]);
     }
 

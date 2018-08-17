@@ -1,4 +1,4 @@
-<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_add.html";i:1534409827;}*/ ?>
+<?php /*a:1:{s:107:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_add.html";i:1534497240;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -63,7 +63,7 @@
 			<select class="select" name="role_id" size="1">
 				<option value="">请选择角色</option>
 				<?php if(is_array($roles) || $roles instanceof \think\Collection || $roles instanceof \think\Paginator): if( count($roles)==0 ) : echo "" ;else: foreach($roles as $key=>$role): ?>
-				<option value="<?php echo htmlentities($role['role_id']); ?>"><?php echo htmlentities($role['role_name']); ?></option>
+				<option name="" value="<?php echo htmlentities($role['role_id']); ?>"><?php echo htmlentities($role['role_name']); ?></option>
 				<?php endforeach; endif; else: echo "" ;endif; ?>
 			</select>
 			</span> </div>
@@ -71,7 +71,7 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">状态：</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
-			<select class="select" name="role_id" size="1">
+			<select class="select" name="status" size="1">
 				<option value="1">启用</option>
 				<option value="0">停用</option>
 			</select>

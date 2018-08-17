@@ -1,10 +1,9 @@
 <?php
 namespace app\admin\controller;
 use app\admin\model\Auth;
-use think\Controller;
 use think\Db;
 
-class AuthController extends Controller {
+class AuthController extends CommonController {
     //权限展示
     public function auth_list() {
         //实例化auth模型 取出数据,分配到模板
