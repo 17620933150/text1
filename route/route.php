@@ -34,7 +34,6 @@ Route::group('admin',function() {
     Route::rule('verify', 'admin/public/verify');         //后台登录验证码
     Route::rule('logout', 'admin/public/logout');       //后台退出路由
 
-
     Route::get('index', 'admin/index/index_list');           //后台首页
     Route::get('welcome', 'admin/index/welcome');           //后台首页
 
@@ -52,5 +51,10 @@ Route::group('admin',function() {
     Route::rule('role/role_add', 'admin/role/role_add');     //后台权限添加
     Route::rule('role/role_upd/:id', 'admin/role/role_upd'); //后台权限编辑
     Route::rule('role/role_del/:id', 'admin/role/role_del'); //后台权限删除
+
+    Route::post('count/copyCount_add', 'admin/count/copyCount_add'); //copy事件
+    Route::rule('count/count_domain', 'admin/count/count_domain'); //copy事件域名列表
+    Route::get('count/copyCount_list', 'admin/count/copyCount_list'); //copy事件详情列表
+    Route::get('count/count_data', 'admin/count/count_data'); //copy事件列表柱形图
 
 });

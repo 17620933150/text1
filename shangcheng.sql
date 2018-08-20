@@ -30,5 +30,20 @@ CREATE TABLE `sh_auth` (
   PRIMARY KEY (`auth_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-select t1.*,t2.auth_name p_name from sh_auth t1 left join sh_auth t2 on t1.pid=t2.auth_id; 
+CREATE TABLE `sh_conut` (
+  `conut_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键(自增长)',
+  `bomain` varchar(30) DEFAULT '' COMMENT '网站域名',
+  `keyword` varchar(100) DEFAULT '' COMMENT '关键字',
+  `os` varchar(30) DEFAULT '0' COMMENT '用户设备',
+  `ref` varchar(30) DEFAULT '0' COMMENT '用户访问平台',
+  `create_time` int(11) DEFAULT '0' COMMENT '创建时间',
+  `update_time` int(11) DEFAULT '0' COMMENT '修改时间',
+  PRIMARY KEY (`conut_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
+
+
 
