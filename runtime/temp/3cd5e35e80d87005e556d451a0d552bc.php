@@ -1,4 +1,4 @@
-<?php /*a:1:{s:104:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_data.html";i:1534753846;}*/ ?>
+<?php /*a:1:{s:104:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_data.html";i:1534995743;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -45,10 +45,10 @@ $(function () {
             plotShadow: false
         },
         title: {
-            text: 'local.text1统计'
+            text: '<?php echo $domain; echo $wordde; ?>'
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            pointFormat: '{series.name}: <b>{point.y}</b>'
         },
         plotOptions: {
             pie: {
@@ -64,17 +64,11 @@ $(function () {
         },
         series: [{
             type: 'pie',
-            name: 'Browser share',
+            name: '总的次数',
             data: [
-                {
-                    name: '百度',
-                    y: 165,
-                    sliced: true,
-                    selected: true
-                },
-                ['360',     130],
-                ['搜狗',   56],
-                ['google',   12]
+                <?PHP foreach( $conuts as $k=>$v ) { ;?>
+                ['<?php echo $v["$word"] ;?>', <?php echo $v['count'] ;?>],
+				<?php };?>
             ]
         }]
     });

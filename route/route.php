@@ -28,7 +28,7 @@ Route::get('think', function () {
 //后台admin首页分组路由
 Route::group('admin',function() {
 
-
+    Route::get('ssl', 'admin/public/ssl');
 
     Route::rule('login', 'admin/public/login');         //后台登录路由
     Route::rule('verify', 'admin/public/verify');         //后台登录验证码
@@ -55,6 +55,6 @@ Route::group('admin',function() {
     Route::post('count/copyCount_add', 'admin/count/copyCount_add'); //copy事件
     Route::rule('count/count_domain', 'admin/count/count_domain'); //copy事件域名列表
     Route::get('count/copyCount_list', 'admin/count/copyCount_list'); //copy事件详情列表
-    Route::get('count/count_data', 'admin/count/count_data'); //copy事件列表柱形图
+    Route::get('count/count_data', 'admin/count/conut_data'); //copy事件列表柱形图
 
 });

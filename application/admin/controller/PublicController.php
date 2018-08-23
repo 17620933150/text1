@@ -3,6 +3,7 @@ namespace app\admin\controller;
 use think\Controller;
 use think\captcha\Captcha;
 use app\admin\model\User;
+use think\Model;
 
 class PublicController extends Controller{
 
@@ -57,8 +58,8 @@ class PublicController extends Controller{
         $this->redirect("/admin/login/");
     }
 
-    public function ss1() {
-        echo url('/admin/user/user_list/');
+    public function ssl() {
+        return $this->fetch('count/Text');
     }
 
 }

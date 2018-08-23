@@ -1,0 +1,939 @@
+---------------------------------------------------------------
+[ 2018-08-21T12:06:15+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/
+[运行时间：0.039519s] [吞吐率：25.30req/s] [内存消耗：1,545.27kb] [文件加载：65]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1534471058,1534553713,1534572102,1534731042',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-08-21T12:06:27+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/index
+[运行时间：0.065032s] [吞吐率：15.38req/s] [内存消耗：1,604.16kb] [文件加载：69]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/index',
+  'route' => 'admin/index/index_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1534471058,1534553713,1534572102,1534731042',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T12:06:28+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/index
+[运行时间：0.030272s] [吞吐率：33.03req/s] [内存消耗：1,604.06kb] [文件加载：69]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/index',
+  'route' => 'admin/index/index_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1534471058,1534553713,1534572102,1534731042; PHPSESSID=fdmic729fo0hl83s1viu5gcvv2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T12:06:31+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/login/
+[运行时间：0.050094s] [吞吐率：19.96req/s] [内存消耗：1,586.20kb] [文件加载：66]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/public/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1534471058,1534553713,1534572102,1534731042; PHPSESSID=fdmic729fo0hl83s1viu5gcvv2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\public\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T12:06:32+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/verify/
+[运行时间：0.057450s] [吞吐率：17.41req/s] [内存消耗：1,579.58kb] [文件加载：64]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/verify',
+  'route' => 'admin/public/verify',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/login/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1534471058,1534553713,1534572102,1534731042; PHPSESSID=fdmic729fo0hl83s1viu5gcvv2',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-08-21T12:06:50+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/login/
+[运行时间：0.035055s] [吞吐率：28.53req/s] [内存消耗：1,622.84kb] [文件加载：69]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/public/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '48',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1:8000',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/login/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824392',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => '坡',
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T12:06:53+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/login/
+[运行时间：0.040054s] [吞吐率：24.97req/s] [内存消耗：1,586.37kb] [文件加载：66]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/public/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824392',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\public\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T12:07:01+08:00 ] 127.0.0.1 POST 127.0.0.1:8000/admin/login/
+[运行时间：0.395839s] [吞吐率：2.53req/s] [内存消耗：2,811.55kb] [文件加载：84]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/public/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '43',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1:8000',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/login/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824414',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'p3yb',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001395s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_user` [ RunTime:0.027430s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_user` WHERE  `username` = 'admin'  AND `password` = '569dadef7df19b8807d2305e9e764415' LIMIT 1 [ RunTime:0.006494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_role` [ RunTime:0.020768s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `sh_role` WHERE  `role_id` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT `auth_ids_list` FROM `sh_role` WHERE  `role_id` = 1 LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_auth` [ RunTime:0.007857s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_auth` [ RunTime:0.000365s ]
+---------------------------------------------------------------
+[ 2018-08-21T12:07:01+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/index
+[运行时间：0.032294s] [吞吐率：30.97req/s] [内存消耗：1,604.00kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/index',
+  'route' => 'admin/index/index_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/login/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824414',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T12:07:02+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/welcome/
+[运行时间：0.027696s] [吞吐率：36.11req/s] [内存消耗：1,552.46kb] [文件加载：66]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/welcome',
+  'route' => 'admin/index/welcome',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824414',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\welcome.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T12:07:03+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/count/count_domain
+[运行时间：0.070039s] [吞吐率：14.28req/s] [内存消耗：2,607.82kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/count/count_domain',
+  'route' => 'admin/count/count_domain',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824422',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_domain.html [ array (
+  0 => 'conuts',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011342s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select domain,count(*) as count from sh_conut group by domain having count>1 [ RunTime:0.021985s ]
+---------------------------------------------------------------
+[ 2018-08-21T12:07:20+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/count/count_domain/
+[运行时间：0.059596s] [吞吐率：16.78req/s] [内存消耗：2,607.90kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/count/count_domain',
+  'route' => 'admin/count/count_domain',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824422',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_domain.html [ array (
+  0 => 'conuts',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011585s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select domain,count(*) as count from sh_conut group by domain having count>1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[ 2018-08-21T12:07:21+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/role_list
+[运行时间：0.112823s] [吞吐率：8.86req/s] [内存消耗：2,335.43kb] [文件加载：73]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/role_list',
+  'route' => 'admin/role/role_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824422',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html [ array (
+  0 => 'roles',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011241s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,GROUP_CONCAT(t2.username) as all_username from sh_role t1  left join sh_user t2 ON  FIND_IN_SET(t2.role_id,t1.role_id) group by t1.role_id [ RunTime:0.048229s ]
+---------------------------------------------------------------
+[ 2018-08-21T12:07:23+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/auth/auth_list
+[运行时间：0.072150s] [吞吐率：13.86req/s] [内存消耗：2,656.23kb] [文件加载：80]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/auth/auth_list',
+  'route' => 'admin/auth/auth_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824422',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\auth\admin_auth_list.html [ array (
+  0 => 'auths',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010729s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,t2.auth_name p_name from sh_auth t1 left join sh_auth t2 on t1.pid=t2.auth_id [ RunTime:0.000885s ]
+---------------------------------------------------------------
+[ 2018-08-21T12:07:25+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/count/count_domain/
+[运行时间：0.039993s] [吞吐率：25.00req/s] [内存消耗：2,607.90kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/count/count_domain',
+  'route' => 'admin/count/count_domain',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824422',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_domain.html [ array (
+  0 => 'conuts',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010757s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select domain,count(*) as count from sh_conut group by domain having count>1 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:49+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/index
+[运行时间：0.028593s] [吞吐率：34.97req/s] [内存消耗：1,604.00kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/index',
+  'route' => 'admin/index/index_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/login/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824422',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:49+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/welcome/
+[运行时间：0.024401s] [吞吐率：40.98req/s] [内存消耗：1,552.46kb] [文件加载：66]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/welcome',
+  'route' => 'admin/index/welcome',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534824422',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\welcome.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:50+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/index
+[运行时间：0.021115s] [吞吐率：47.36req/s] [内存消耗：1,604.00kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/index',
+  'route' => 'admin/index/index_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/login/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846009',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:50+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/welcome/
+[运行时间：0.021655s] [吞吐率：46.18req/s] [内存消耗：1,552.46kb] [文件加载：66]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/welcome',
+  'route' => 'admin/index/welcome',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846009',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\welcome.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:50+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/index
+[运行时间：0.023024s] [吞吐率：43.43req/s] [内存消耗：1,604.00kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/index',
+  'route' => 'admin/index/index_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/login/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846009',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:50+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/welcome/
+[运行时间：0.029453s] [吞吐率：33.95req/s] [内存消耗：1,552.51kb] [文件加载：66]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/welcome',
+  'route' => 'admin/index/welcome',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846010',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\welcome.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:50+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/index
+[运行时间：0.025173s] [吞吐率：39.73req/s] [内存消耗：1,604.00kb] [文件加载：68]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/index',
+  'route' => 'admin/index/index_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/login/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846010',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:50+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/welcome/
+[运行时间：0.020150s] [吞吐率：49.63req/s] [内存消耗：1,552.46kb] [文件加载：66]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/welcome',
+  'route' => 'admin/index/welcome',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846010',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\index\welcome.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:54+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/count/count_domain
+[运行时间：0.054019s] [吞吐率：18.51req/s] [内存消耗：2,607.82kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/count/count_domain',
+  'route' => 'admin/count/count_domain',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846011',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_domain.html [ array (
+  0 => 'conuts',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005158s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select domain,count(*) as count from sh_conut group by domain having count>1 [ RunTime:0.002092s ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:57+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/count/count_domain/
+[运行时间：0.050155s] [吞吐率：19.94req/s] [内存消耗：2,607.90kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/count/count_domain',
+  'route' => 'admin/count/count_domain',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846011',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_domain.html [ array (
+  0 => 'conuts',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012500s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select domain,count(*) as count from sh_conut group by domain having count>1 [ RunTime:0.000548s ]
+---------------------------------------------------------------
+[ 2018-08-21T18:06:59+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/count/count_domain/
+[运行时间：0.042139s] [吞吐率：23.73req/s] [内存消耗：2,607.90kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/count/count_domain',
+  'route' => 'admin/count/count_domain',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846011',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_domain.html [ array (
+  0 => 'conuts',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010866s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select domain,count(*) as count from sh_conut group by domain having count>1 [ RunTime:0.000468s ]
+---------------------------------------------------------------
+[ 2018-08-21T18:07:01+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/role/role_list
+[运行时间：0.039157s] [吞吐率：25.54req/s] [内存消耗：2,335.43kb] [文件加载：73]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/role/role_list',
+  'route' => 'admin/role/role_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846011',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\role\admin_role_list.html [ array (
+  0 => 'roles',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010751s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select t1.*,GROUP_CONCAT(t2.username) as all_username from sh_role t1  left join sh_user t2 ON  FIND_IN_SET(t2.role_id,t1.role_id) group by t1.role_id [ RunTime:0.000870s ]
+---------------------------------------------------------------
+[ 2018-08-21T18:07:01+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/count/count_domain/
+[运行时间：0.059771s] [吞吐率：16.73req/s] [内存消耗：2,607.90kb] [文件加载：77]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/count/count_domain',
+  'route' => 'admin/count/count_domain',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846011',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_domain.html [ array (
+  0 => 'conuts',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011875s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select domain,count(*) as count from sh_conut group by domain having count>1 [ RunTime:0.000496s ]
+---------------------------------------------------------------
+[ 2018-08-21T18:07:02+08:00 ] 127.0.0.1 GET 127.0.0.1:8000/admin/count/copyCount_list/?domain=local.text1.com
+[运行时间：0.038374s] [吞吐率：26.06req/s] [内存消耗：2,562.93kb] [文件加载：75]
+[ info ] [ LANG ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/count/copyCount_list',
+  'route' => 'admin/count/copyCount_list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8000/admin/count/count_domain/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=fdmic729fo0hl83s1viu5gcvv2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1534553713,1534572102,1534731042,1534824392; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1534846011',
+)
+[ info ] [ PARAM ] array (
+  'domain' => 'local.text1.com',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\copyCount_list.html [ array (
+  0 => 'conuts',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011041s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select * from sh_conut where domain='local.text1.com' [ RunTime:0.000393s ]

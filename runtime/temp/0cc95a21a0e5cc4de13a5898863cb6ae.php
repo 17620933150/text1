@@ -1,4 +1,4 @@
-<?php /*a:1:{s:106:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_domain.html";i:1534759002;}*/ ?>
+<?php /*a:1:{s:106:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\conut_domain.html";i:1535017521;}*/ ?>
 ﻿<!doctype html>
 <html lang="en">
 <head>
@@ -30,11 +30,19 @@
 		<?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>
 	</table>
+
+	<button type="button" class="btn btn-primary btn-lg btn-block" id="t1">加载更多</button>
 </div>
 
 
 </body>
-
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+	$('#t1').on('click',function () {
+		console.log(123);
+    })
+</script>
 
 </html>

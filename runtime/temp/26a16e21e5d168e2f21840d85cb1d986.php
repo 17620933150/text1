@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\copyCount_list.html";i:1534759379;}*/ ?>
+<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\copyCount_list.html";i:1534994410;}*/ ?>
 ﻿<!doctype html>
 <html lang="en">
 <head>
@@ -17,9 +17,9 @@
 		<tr>
 			<th>ID</th>
 			<th>域名</th>
-			<th>关键字</th>
-			<th>用户设备</th>
-			<th>搜索平台</th>
+			<th><a href="<?php echo url('/admin/count/count_data/').'?domain='.$domain.'&word=keyword'; ?>">关键字</a></th>
+			<th><a href="<?php echo url('/admin/count/count_data/').'?domain='.$domain.'&word=os'; ?>">用户设备</a></th>
+			<th><a href="<?php echo url('/admin/count/count_data/').'?domain='.$domain.'&word=ref'; ?>">搜索平台</a></th>
 			<th>复制时间</th>
 		</tr>
 		</thead>
