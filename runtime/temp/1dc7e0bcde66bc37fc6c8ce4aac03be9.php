@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\copyCount_list.html";i:1535359274;}*/ ?>
+<?php /*a:1:{s:109:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\count\copyWechat_list.html";i:1535359245;}*/ ?>
 ﻿<!doctype html>
 <html lang="en">
 <head>
@@ -10,9 +10,8 @@
 	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<h2 class="text-center">复制详情</h2>
+<h2 class="text-center">微信号数据</h2>
 <div>
-
 	<div style="text-align: right;margin: 10px 50px;">
 		<span class="glyphicon glyphicon-menu-left btn btn-default" style="float: left;" onClick="javascript :history.back(-1);"></span>
 		<a class="btn btn-default">导出表格</a>
@@ -23,11 +22,8 @@
 		<tr>
 			<th>ID</th>
 			<th>域名</th>
-			<th><a href="<?php echo url('/admin/count/count_data/').'?domain='.$domain.'&word=keyword'; ?>">关键字</a></th>
-			<th><a href="<?php echo url('/admin/count/count_data/').'?domain='.$domain.'&word=os'; ?>">用户设备</a></th>
-			<th><a href="<?php echo url('/admin/count/count_data/').'?domain='.$domain.'&word=ref'; ?>">搜索平台</a></th>
 			<th>用户复制的微信号</th>
-			<th>复制时间</th>
+			<th>复制次数</th>
 		</tr>
 		</thead>
 		<tbody>
@@ -35,21 +31,18 @@
 		<tr>
 			<td><?php echo htmlentities($key+1); ?></td>
 			<td><?php echo htmlentities($conut['domain']); ?></td>
-			<td><?php echo htmlentities($conut['keyword']); ?></td>
-			<td><?php echo htmlentities($conut['os']); ?></td>
-			<td><?php echo htmlentities($conut['ref']); ?></td>
 			<td><?php echo htmlentities($conut['wechat']); ?></td>
-			<td><?php echo date('Y-m-d H:i:s',$conut['create_time']); ?> </td>
+			<td><?php echo htmlentities($conut['wechats']); ?></td>
 		</tr>
 		<?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>
 	</table>
 </div>
-
-
 </body>
-
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <script>
     // 使用outerHTML属性获取整个table元素的HTML代码（包括<table>标签），然后包装成一个完整的HTML文档，设置charset为urf-8以防止中文乱码
     var html = "<html><head><meta charset='utf-8' /></head><body>" + document.getElementsByTagName("table")[0].outerHTML + "</body></html>";
@@ -59,6 +52,8 @@
     // 利用URL.createObjectURL()方法为a元素生成blob URL
     a.href = URL.createObjectURL(blob);
     // 设置文件名
-    a.download = "复制详情.xlsx";
+    a.download = "微信号数据.xlsx";
 </script>
+</body>
+
 </html>

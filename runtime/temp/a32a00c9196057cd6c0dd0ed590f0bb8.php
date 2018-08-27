@@ -1,4 +1,4 @@
-<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html";i:1534492728;}*/ ?>
+<?php /*a:1:{s:108:"D:\tool\PhpStudy20180211\PHPTutorial\WWW\tp5.1newshangcheng\application\admin\view\user\admin_user_list.html";i:1535357612;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -27,7 +27,7 @@
     <title>管理员列表</title>
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 管理员管理 <span
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> <input type="button" name="back" value="管理员管理" onclick="JavaScript:history.back(-1);"/> <span
         class="c-gray en">&gt;</span> 管理员列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px"
                                                href="javascript:location.replace(location.href);" title="刷新"><i
         class="Hui-iconfont">&#xe68f;</i></a></nav>

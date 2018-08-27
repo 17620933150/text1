@@ -55,6 +55,7 @@ Route::group('admin',function() {
     Route::post('count/copyCount_add', 'admin/count/copyCount_add'); //copy事件
     Route::rule('count/count_domain', 'admin/count/count_domain'); //copy事件域名列表
     Route::get('count/copyCount_list', 'admin/count/copyCount_list'); //copy事件详情列表
+    Route::get('count/copyWechat_list', 'admin/count/copyWechat_list'); //copy事件详情列表
     Route::get('count/count_data', 'admin/count/conut_data'); //copy事件列表柱形图
 
 });
